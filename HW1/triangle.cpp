@@ -9,12 +9,12 @@ float distance(float x1, float y1, float x2, float y2) {
 }
 
 // Функция для вычисления площади треугольника по координатам вершин
-float calculateArea(float x1, float y1, float x2, float y2, float x3, float y3) {
+float Area(float x1, float y1, float x2, float y2, float x3, float y3) {
     return abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2)) / 2.0;
 }
 
 // Функция для вычисления периметра треугольника
-float calculatePerimeter(float a, float b, float c) {
+float Perimeter(float a, float b, float c) {
     return a + b + c;
 }
 
@@ -38,8 +38,8 @@ int main() {
     float c = distance(x3, y3, x1, y1);
 
     // Вычисление площади и периметра
-    float area = calculateArea(x1, y1, x2, y2, x3, y3);
-    float perimeter = calculatePerimeter(a, b, c);
+    float area = Area(x1, y1, x2, y2, x3, y3);
+    float perimeter = (a, b, c);
 
     // Вывод результатов
     cout << "Площадь треугольника: " << area << endl;
